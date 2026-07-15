@@ -213,36 +213,3 @@ window.location.href="https://gaviet.top";
 </body>
 
 </html>
-
-const continueButton =
-      document.getElementById("continueButton");
-
-    const loadingBox =
-      document.getElementById("loadingBox");
-
-    const note =
-      document.getElementById("note");
-
-    const currentYear =
-      document.getElementById("currentYear");
-
-    currentYear.textContent =
-      new Date().getFullYear();
-
-    continueButton.addEventListener(
-      "click",
-      function () {
-        continueButton.disabled = true;
-        continueButton.textContent = "ĐANG XÁC MINH...";
-        loadingBox.classList.add("show");
-        note.textContent = "Vui lòng đợi 2 giây...";
-
-        setTimeout(function () {
-          window.location.href = destinationUrl;
-        }, 2000);
-      }
-    );
-  </script>
-
-</body>
-</html>
